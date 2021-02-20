@@ -14,6 +14,7 @@ app.get('/subscribers/:channel_id', (req, res) => {
       return response.data.items[0].statistics
     })
     .then(data => {
+      console.log(data)
       const subs = { subscribers: data.subscriberCount }
       res.status(200).send(subs)
       return subs
