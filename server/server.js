@@ -6,18 +6,13 @@ const youtubeApi = require('./youtube_api.js')
 
 app.use(express.static('build'))
 
-app.get('/subscribers/:channel_id', (req, res) => {
+app.get('/channel/:channel_id', (req, res) => {
   const channelId = req.params.channel_id
 
   axios.get(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${youtubeApi.key}`)
     .then(response => {
+      res.status(200).send(response.data.items[0].statistics)
       return response.data.items[0].statistics
-    })
-    .then(data => {
-      console.log(data)
-      const subs = { subscribers: data.subscriberCount }
-      res.status(200).send(subs)
-      return subs
     })
     .catch(error => {
       console.error(error)
