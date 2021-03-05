@@ -1,3 +1,14 @@
+# Purpose
+Tiny app to watch subscriber, views, and video counts for a particular youtube channel.
+
+# Channel ID
+You can get a channel ID by visiting a channel. Here is an example:  
+https://www.youtube.com/channel/UCWjmAUHmajb1-eo5WKk_22A  
+"UCWjmAUHmajb1-eo5WKk_22A" would be the channel ID
+
+# Starting
+npm run server (default is localhost:3000)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
