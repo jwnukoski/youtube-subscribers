@@ -1,5 +1,5 @@
 # Purpose
-Micro app to watch subscriber, views, and video counts for a particular YouTube channel by the second.
+Micro app to watch subscriber, views, and video counts for a particular YouTube channel by the second.  
 ![Preview of youtube-subscribers](https://github.com/jwnukoski/youtube-subscribers/blob/main/screenshot.png?raw=true "Preview of youtube-subscribers")
 
 # Channel ID
