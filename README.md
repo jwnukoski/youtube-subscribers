@@ -8,7 +8,7 @@ https://www.youtube.com/channel/UCWjmAUHmajb1-eo5WKk_22A
 "UCWjmAUHmajb1-eo5WKk_22A" would be the channel ID
 
 # Starting
-You will first need to add a Google API key credentials to server/youtube_api.js.  
+You will first need to add Google API credentials to server/youtube_api.js.  
 You can simply rename or copy server/youtube_api_example.js and update the key variable.  
 See: https://console.developers.google.com/apis/credentials  
 
